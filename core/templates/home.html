@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KindCats | Listado de usuarios</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="../static/CSS/style_listado.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,700;0,900;1,100;1,600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">   
+    <link rel="icon" href="../static/IMG/logo_final.png">
+
+
+    <header class="header">
+        <img class="logo_final" src="../static/IMG/logo_final.png" alt="">
+        <div class="bg-dark">
+          <div class="color-barra">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-light color-barra">
+                <a class="navbar-brand" href="#"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navg navbar-nav w-100 justify-center-center">
+                  </div>
+                </nav>
+              </div>
+              </div>
+            </div>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>꒱࿐♡ ˚.*ೃ</h1>    
+        </div>
+    <div class="row">
+            <h1>⮯</h1>
+    </div>
+    <table class=table>
+            <thead>
+                <tr>
+                    <th scope="col"><i class="fa fa-id-card" aria-hidden="true"></i>Rut</th>
+                    <th scope="col"><i class="fa fa-user" aria-hidden="true"></i>Primer nombre</th>
+                    <th scope="col"><i class="fa fa-user" aria-hidden="true"></i>Segundo nombre</th>
+                    <th scope="col"><i class="fa fa-user" aria-hidden="true"></i>Primer apellido</th>
+                    <th scope="col"><i class="fa fa-user" aria-hidden="true"></i>Segundo apellido</th>
+                    <th scope="col"><i class="fa fa-birthday-cake" aria-hidden="true"></i>Edad</th>
+                    <th scope="col"><i class="fa fa-phone" aria-hidden="true"></i>Telefono</th>
+                    <th scope="col"><i class="fa fa-envelope" aria-hidden="true"></i>Email</th>
+                    <th scope="col"><i class="fa fa-key" aria-hidden="true"></i>Contraseña</th>
+            </thead>
+            <tbody>
+                {%for ve in datos%}
+                    <tr>
+                        <td>{{ve.rut}}</td>
+                        <td>{{ve.pnombre}}</td>
+                        <td>{{ve.snombre}}</td>
+                        <td>{{ve.papellido}}</td>
+                        <td>{{ve.sapellido}}</td>
+                        <td>{{ve.edad}}</td>
+                        <td>{{ve.telefono}}</td>
+                        <td>{{ve.email}}</td>
+                        <td>{{ve.contrasena}}</td>
+                    </tr>
+                {%endfor%}
+
+            </tbody>
+
+    </table>
+    <a href="{% url 'login' %}" class="btn btn-secondary">Volver a login ↩</a>
+   </div>
+  </div>
+
+
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../static/IMG/logo_final.png" alt="Logo de KindCats">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Integrantes</h2>
+                <p>Nicolas Parra</p>
+                <p>Miguel Orellana</p>
+                <p>Mauro Bravo</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100076630256406" class="fa fa-facebook"></a>
+                    <a target="_blank" href="https://www.instagram.com/kindcats5/?hl=es-la" class="fa fa-instagram"></a>
+                    <a target="_blank" href="https://twitter.com/KindCats" class="fa fa-twitter"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCxqSZVe9ASq1tkVgnsp5Uhg" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Desarrollado por TeamCatDev</b> - @Copyrigth|Todos los Derechos Reservados.</small>
+        </div>
+      </footer>
+      
+          <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+        </body>
+
+
+
+    </body>
+</html>

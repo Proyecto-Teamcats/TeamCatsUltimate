@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100% ;
+    min-height: 100vh ;
+    background-image: url('../img/fondo_gato.jpg');
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-registro {
+    width: 400px;
+    background: #0acaa1;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color:azure;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-registro h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: indigo;
+    
+
+}
+
+.form-registro span {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(5, 13, 85);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.form-registro i {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(5, 13, 85);
+
+
+
+}
+
+.controls {
+    width: 100%;
+    background: #a6fff3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1fc564;
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+}
+
+.form-registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-registro a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-registro .botons {
+
+    width: 100%;
+    background: #04973d;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+} 
+
+
+.logo_final {
+    
+    background-color: #737373;
+    width: 100px;
+    height: 60px;
+    float:left;
+    padding: 8px;
+
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;  
+    background-color: #07183D;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(32, 179, 101);
+}
+.pie-pagina .grupo-2{
+    background-color: #0d2033;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
