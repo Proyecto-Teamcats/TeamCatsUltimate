@@ -2,7 +2,17 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import cx_Oracle
 
+connstr='username/pwd@database'
+conn = cx_Oracle.connect(connstr)
+curs = conn.cursor()
+
+curs.execute('select * from table1;')
+print curs.description
+for row in curs:
+   print row
+conn.close()
 
 def main():
     """Run administrative tasks."""
