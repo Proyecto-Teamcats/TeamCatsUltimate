@@ -2,12 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-import cx_Oracle
 
-
-connstr='username/pwd@database'
-conn = cx_Oracle.connect(connstr)
-curs = conn.cursor()
 
 
 def main():
