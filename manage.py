@@ -4,6 +4,7 @@ import os
 import sys
 import cx_Oracle
 
+
 connstr='username/pwd@database'
 conn = cx_Oracle.connect(connstr)
 curs = conn.cursor()
